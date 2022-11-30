@@ -7,6 +7,9 @@ const ReactJS = () => {
   const handleOnClick = () => {
     const location = {
       pathname: '/redux',
+      state: {
+        isActive: true,
+      },
     };
 
     history.push(location);
