@@ -1,11 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router} from 'react-router-dom'
+
+import Content from './Content'
+import Header from './Header'
+
 import "./style.css";
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <Router>
+        <Header/>
+        <Content/>
+      </Router>
     </div>
   );
 }
